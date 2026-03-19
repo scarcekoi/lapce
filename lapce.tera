@@ -1,0 +1,192 @@
+---
+whiskers:
+  version: "^2.8.0"
+  matrix:
+    - flavor
+  filename: "catppuccin-{{ flavor.identifier }}.toml"
+  hex_format: "#{{r}}{{g}}{{b}}{{z}}"
+---
+#:schema https://raw.githubusercontent.com/lapce/lapce/master/extra/schemas/color-theme.json
+[color-theme]
+name = "Catppuccin {{ flavor.name }}"
+
+[ui]
+font-family = ""
+font-size = 13
+header-height = 35
+status-height = 25
+tab-min-width = 100
+activity-width = 50
+scroll-width = 10
+drop-shadow-width = 0
+
+[color-theme.base]
+
+black = "{{ surface1.hex }}"
+blue = "{{ blue.hex }}"
+cyan = "{{ teal.hex }}"
+green = "{{ green.hex }}"
+magenta = "{{ pink.hex }}"
+orange = "{{ peach.hex }}"
+purple = "{{ mauve.hex }}"
+red = "{{ red.hex }}"
+white = "{{ subtext1.hex }}"
+yellow = "{{ yellow.hex }}"
+
+[color-theme.syntax]
+"comment" = "{{ overlay0.hex }}"
+"constant" = "{{ peach.hex }}"
+"type" = "$yellow"
+"typeAlias" = "$yellow"
+"number" = "$yellow"
+"enum" = "$yellow"
+"struct" = "$yellow"
+"structure" = "$yellow"
+"interface" = "$yellow"
+"attribute" = "$yellow"
+"constructor" = "{{ sapphire.hex }}"
+
+"function" = "$blue"
+"method" = "$blue"
+"function.method" = "{{ mauve.hex }}"
+
+"keyword" = "{{ mauve.hex }}"
+"selfKeyword" = "$purple"
+
+"field" = "$red"
+"property" = "$red"
+"enumMember" = "$red"
+"enum-member" = "$red"
+
+"string" = "$green"
+"string.escape" = "$cyan"
+
+"type.builtin" = "$red"
+"builtinType" = "$red"
+"escape" = "{{ teal.hex }}"
+"embedded" = "{{ teal.hex }}"
+
+"punctuation.delimiter" = "{{ overlay2.hex }}"
+"text.title" = "$orange"
+"text.uri" = "$cyan"
+"text.reference" = "$yellow"
+"variable" = "$red"
+"variable.other.member" = "$green"
+"tag" = "{{ mauve.hex }}"
+
+
+[color-theme.ui]
+"lapce.error" = "$red"
+"lapce.warn" = "$yellow"
+"lapce.dropdown_shadow" = "{{ surface2.hex }}"
+"lapce.border" = "{{ surface2.hex }}"
+"lapce.scroll_bar" = "{{ surface0.hex }}"
+
+"lapce.button.primary.background" = "{{ mauve.hex }}"
+"lapce.button.primary.foreground" = "{{ base.hex }}"
+
+# tab
+"lapce.tab.active.background" = "{{ base.hex }}"
+"lapce.tab.active.foreground" = "{{ mauve.hex }}"
+"lapce.tab.active.underline" = "{{ mauve.hex }}"
+
+"lapce.tab.inactive.background" = "{{ base.hex }}"
+"lapce.tab.inactive.foreground" = "{{ subtext0.hex }}"
+"lapce.tab.inactive.underline" = "{{ subtext0.hex }}"
+
+"lapce.tab.separator" = "{{ crust.hex }}"
+
+"lapce.icon.active" = "$white"
+"lapce.icon.inactive" = "{{ overlay0 | sub(lightness=10) | hex }}"
+
+"lapce.remote.icon" = "$purple"
+"lapce.remote.local" = "{{ crust.hex }}"
+"lapce.remote.connected" = "#50A14F"
+"lapce.remote.connecting" = "#C18401"
+"lapce.remote.disconnected" = "#E45649"
+
+"lapce.plugin.name" = "#DDDDDD"
+"lapce.plugin.description" = "$white"
+"lapce.plugin.author" = "#B0B0B0"
+
+
+"editor.background" = "{{ base.hex }}"
+"editor.foreground" = "{{ text.hex }}"
+"editor.dim" = "{{ overlay1.hex }}"
+"editor.focus" = "#CCCCCC"
+"editor.caret" = "{{ teal.hex }}"
+"editor.selection" = "{{ surface2.hex }}"
+"editor.current_line" = "{{ surface0 | mod(lightness=5) | hex }}"
+"editor.link" = "{{ rosewater.hex }}"
+"editor.visible_whitespace" = "$grey"
+"editor.indent_guide" = "$grey"
+"editor.drag_drop_background" = "{{ sapphire | mod(opacity=0.333) | hex }}"
+"editor.drag_drop_tab_background" = "#0b0e1455"
+"editor.sticky_header_background" = "$black"
+
+"inlay_hint.foreground" = "{{ surface1.hex }}"
+"inlay_hint.background" = "{{ mantle.hex }}"
+
+"source_control.added" = "{{ green | mod(opacity=0.196) | hex }}"
+"source_control.removed" = "{{ maroon | mod(opacity=0.196) | hex }}"
+"source_control.modified" = "{{ blue | mod(opacity=0.196) | hex }}"
+
+"palette.background" = "{{ base.hex }}"
+"palette.current" = "{{ crust.hex }}"
+
+"completion.background" = "{{ base.hex }}"
+"completion.current" = "{{ surface2.hex }}"
+
+"hover.background" = "{{ base.hex }}"
+
+"activity.background" = "{{ mantle.hex }}"
+"activity.current" = "{{ crust.hex }}"
+
+
+"debug.breakpoint" = "$red"
+"debug.breakpoint.hover" = "$grey"
+
+"panel.background" = "{{ mantle.hex }}"
+"panel.foreground" = "{{ text.hex }}"
+"panel.foreground.dim" = "{{ text | sub(lightness=15) | hex }}"
+"panel.current.background" = "{{ crust.hex }}"
+"panel.current.foreground" = "{{ text.hex }}"
+"panel.current.foreground.dim" = "{{ text | sub(lightness=15) | hex }}"
+"panel.hovered.background" = "{{ crust.hex }}"
+"panel.hovered.active.background" = "{{ surface0 | mod(lightness=10) | hex }}"
+"panel.hovered.foreground" = "{{ text.hex }}"
+"panel.hovered.foreground.dim" = "{{ text | sub(lightness=15) | hex }}"
+
+"status.background" = "{{ mantle.hex }}"
+"status.foreground" = "$white"
+"status.modal.normal.background" = "$blue"
+"status.modal.normal.foreground" = "$black"
+"status.modal.insert.background" = "$red"
+"status.modal.insert.foreground" = "$black"
+"status.modal.visual.background" = "$yellow"
+"status.modal.visual.foreground" = "$black"
+"status.modal.terminal.background" = "$purple"
+"status.modal.terminal.foreground" = "$black"
+
+
+"markdown.blockquote" = "{{ subtext0.hex }}"
+
+"terminal.cursor" = "{{ rosewater.hex }}"
+"terminal.foreground" = "{{ text.hex }}"
+"terminal.background" = "{{ base.hex }}"
+"terminal.white" = "{{ subtext1.hex }}"
+"terminal.black" = "{{ surface1.hex }}"
+"terminal.red" = "$red"
+"terminal.blue" = "$blue"
+"terminal.green" = "$green"
+"terminal.yellow" = "$yellow"
+"terminal.cyan" = "{{ teal.hex }}"
+"terminal.magenta" = "{{ pink.hex }}"
+"terminal.bright_white" = "{{ subtext0.hex }}"
+"terminal.bright_red" = "$red"
+"terminal.bright_blue" = "$blue"
+"terminal.bright_green" = "$green"
+"terminal.bright_yellow" = "$yellow"
+"terminal.bright_cyan" = "{{ teal.hex }}"
+"terminal.bright_magenta" = "{{ pink.hex }}"
+"terminal.bright_black" = "{{ surface2.hex }}"

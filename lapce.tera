@@ -72,7 +72,7 @@ yellow = "{{ yellow.hex }}"
 "text.reference" = "$yellow"
 "variable" = "$text"
 "variable.other.member" = "$blue"
-"tag" = "{{ mauve.hex }}"
+"tag" = "{{ blue.hex }}"
 
 
 [color-theme.ui]

@@ -63,7 +63,7 @@ yellow = "{{ yellow.hex }}"
 
 "type.builtin" = "$red"
 "builtinType" = "$red"
-"escape" = "{{ teal.hex }}"
+"escape" = "{{ pink.hex }}"
 "embedded" = "{{ teal.hex }}"
 
 "punctuation.delimiter" = "{{ overlay2.hex }}"

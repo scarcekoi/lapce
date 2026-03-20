@@ -68,7 +68,7 @@ yellow = "{{ yellow.hex }}"
 
 "punctuation.delimiter" = "{{ overlay2.hex }}"
 "text.title" = "$orange"
-"text.uri" = "$cyan"
+"text.uri" = "$blue"
 "text.reference" = "$yellow"
 "variable" = "$text"
 "variable.other.member" = "$blue"

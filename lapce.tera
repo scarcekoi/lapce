@@ -53,8 +53,8 @@ yellow = "{{ yellow.hex }}"
 "keyword" = "{{ mauve.hex }}"
 "selfKeyword" = "$purple"
 
-"field" = "$red"
-"property" = "$red"
+"field" = "$blue"
+"property" = "$blue"
 "enumMember" = "$teal"
 "enum-member" = "$teal"
 

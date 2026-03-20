@@ -55,8 +55,8 @@ yellow = "{{ yellow.hex }}"
 
 "field" = "$red"
 "property" = "$red"
-"enumMember" = "$red"
-"enum-member" = "$red"
+"enumMember" = "$teal"
+"enum-member" = "$teal"
 
 "string" = "$green"
 "string.escape" = "$cyan"

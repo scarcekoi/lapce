@@ -34,7 +34,7 @@ white = "{{ subtext1.hex }}"
 yellow = "{{ yellow.hex }}"
 
 [color-theme.syntax]
-"comment" = "{{ overlay0.hex }}"
+"comment" = "{{ overlay2.hex }}"
 "constant" = "{{ peach.hex }}"
 "type" = "$yellow"
 "typeAlias" = "$yellow"

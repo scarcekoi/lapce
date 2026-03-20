@@ -71,7 +71,7 @@ yellow = "{{ yellow.hex }}"
 "text.uri" = "$cyan"
 "text.reference" = "$yellow"
 "variable" = "$red"
-"variable.other.member" = "$green"
+"variable.other.member" = "$blue"
 "tag" = "{{ mauve.hex }}"
 
 

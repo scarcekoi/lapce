@@ -59,7 +59,7 @@ yellow = "{{ yellow.hex }}"
 "enum-member" = "$teal"
 
 "string" = "$green"
-"string.escape" = "$cyan"
+"string.escape" = "$pink"
 
 "type.builtin" = "$red"
 "builtinType" = "$red"
